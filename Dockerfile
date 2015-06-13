@@ -10,7 +10,8 @@ RUN mkdir /app
 COPY . /app/
 WORKDIR /app
 RUN npm install
-RUN node app.js 
+
+ENTRYPOINT ["node", "/app/app.js"]
 
 # Expose ports.
 EXPOSE 1337
