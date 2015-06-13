@@ -9,7 +9,8 @@ MAINTAINER Andi N. Dirgantara <andi.n.dirgantara@gmail.com>
 RUN mkdir /app
 COPY . /app/
 WORKDIR /app
-RUN sails lift
+RUN npm install
+RUN node app.js 
 
 # Expose ports.
 EXPOSE 1337
