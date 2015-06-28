@@ -1,3 +1,3 @@
-# docker-sails
+# Docker Sails
 
 a [Sails](http://sailsjs.org) application
